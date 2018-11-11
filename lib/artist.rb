@@ -22,9 +22,10 @@ class Artist
   end
 
   def genres
-    Genre.all.select do |genre|
+    songs.map do |song|
       song.genre
     end
   end
+
 
 end
